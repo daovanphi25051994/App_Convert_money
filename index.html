@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App convert money</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="contents">
+            <table class="table">
+                <tr>
+                    <th>Amount</th>
+                    <th>From Currency</th>
+                    <th>To Currency</th>
+
+                </tr>
+                <tr>
+                    <td><input type="text" id="amount" name="amount" value=""></td>
+                    <td><select id="nationFrom">
+                        <option name="nationality" value="vietNam">Việt Nam</option>
+                        <option name="nationality" value="usd">USD</option>
+                    </select></td>
+                    <td><select id="nationTo">
+                        <option name="nationality" value="vietNam">Việt Nam</option>
+                        <option name="nationality" value="usd">USD</option>
+                    </select></td>
+                    <td><button onclick="convertMoney()">Convert</button></td>
+                </tr>
+                <tr>
+                    <td><p id="result">Kết quả : </p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
